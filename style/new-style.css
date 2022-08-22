@@ -1,0 +1,135 @@
+
+/* link google font added link  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    /* background-color: rgba(4, 4, 128, 0.13); */
+}
+.logo_nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.logo_nav_container img{
+    width: 180px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.navigation-container ul{
+    display: flex;
+    transition: 0.7s;
+
+}
+
+.navigation-container ul li{
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+.navigation-container ul li a{
+    color:  orangered;
+    position: relative;
+
+}
+
+.navigation-container ul li a::before{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: linear-gradient(90deg,#ff2647, #ffc72e);
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.navigation-container ul li a:hover::before{
+    width: 100%;
+}
+.toggle-menu{
+    display: none;
+
+}
+.toggle-menu i{
+    font-size: 30px;
+    padding: 0px;
+    cursor: pointer;
+    color:  orangered;
+
+}
+
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+    .logo_nav_container img{
+        width: 120px;
+        height: 10vh;
+    }
+    .navigation-container ul{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        left: 100%;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+    }
+    .navigation-container ul li{
+        width: 90%;
+        line-height: 50px;
+        padding: 20px 0;
+    }
+    .toggle-menu{
+        display: block;
+    }
+  }
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (min-width: 768px) {  
+ 
+} */
+ 
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+ 
+} */
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {  
+    
+} */
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+/* @media (max-width: 950px) { 
+ 
+} */
