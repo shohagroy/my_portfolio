@@ -78,10 +78,62 @@ header{
     color:  orangered;
 
 }
+#toggle-end{
+    display: none;
 
- 
+}
+
+/* header section end  */
+
+/* hero section strat  */
+.hero_section{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.hero-text-container{
+    padding: 15%;
+    width: 50vw;
+}
+
+.hero-image-container{
+    width: 50vw;
+}
+
+.hero-text-container h5{
+    color: #ff2647;
+    padding: 10px 0;
+}
+.hero-text-container h1{
+    font-size: 50px;
+    padding: 10px 0;
+}
+.hire-button{
+    margin: 40px 0;
+}
+.hire-me-btn{
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.6s;
+    position: relative;
+}
+
+.hire-me-btn:hover{
+    background-image: linear-gradient(90deg, orangered, #ffc72e);
+    color: white;
+    border: none;
+}
+
+
+.hero-image-container img{
+    width: 100%;
+    padding: 50px;
+}
 /* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 596px) {
+@media only screen and (max-width: 600px) {
     .logo_nav_container img{
         width: 120px;
         height: 10vh;
