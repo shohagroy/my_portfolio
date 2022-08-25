@@ -111,10 +111,48 @@ header{
     font-size: 50px;
     padding: 5px 0;
 }
+/* animation strat  */
+.animation-container{
+    width: auto;
+    overflow: hidden;
+    width: 700px;
 
+}
 
+.animation-container .text {
+    position: relative;
+    color: orangered;
+    font-size: 50px;
+    font-weight: 700;
+    overflow: hidden;
+}
 
+.animation-container .text.first-text{
+    color: black;
 
+}
+
+.text.secend-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid orangered;
+    animation: typing 4s steps(12) infinite;
+}
+
+@keyframes typing{
+    40%, 60%{
+        left: 100%
+    }
+    100%{
+        left: 0%;
+    }
+}
+/* animation end  */
 
 
 .hire-button{
@@ -132,7 +170,6 @@ header{
     transition: 1s;
     color: white;
 }
-
 
 .hero-image-container img{
     width: 90%;
