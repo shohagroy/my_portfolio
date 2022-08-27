@@ -28,10 +28,10 @@ const textLoad = () => {
         
     }, 4000);
     setTimeout(() => {
-        text.textContent = "Marn Stack Devloper..";
+        text.textContent = "MERN Stack Developer..";
         
-    }, 8000);
+    }, 12000);
 
 }
 textLoad();
-setInterval(textLoad, 12000)
+setInterval(textLoad, 16000)

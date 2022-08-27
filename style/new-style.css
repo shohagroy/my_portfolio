@@ -1,6 +1,6 @@
 
 /* link google font added link  */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Sans:wght@400;700&family=Lobster&family=Poppins:wght@400;700&display=swap');
 
 
 *{
@@ -11,6 +11,9 @@
 
 a{
     text-decoration: none;
+}
+
+body{
 }
 
 header{
@@ -95,8 +98,10 @@ header{
     align-items: center;
 }
 .hero-text-container{
-    padding: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
     width: 50vw;
+    /* background-color: #ffc72e; */
 }
 
 .hero-image-container{
@@ -104,32 +109,38 @@ header{
 }
 
 .hero-text-container h3{
-    color: #ff2647;
+    color: red;
     padding: 0
 }
 .hero-text-container h1{
-    font-size: 50px;
+    font-size: 40px;
     padding: 5px 0;
+    font-family: 'Carter One', cursive;
 }
 /* animation strat  */
 .animation-container{
     width: auto;
     overflow: hidden;
-    width: 700px;
-
+    width:600px;
+    font-size:45px;
 }
 
 .animation-container .text {
     position: relative;
     color: orangered;
-    font-size: 50px;
     font-weight: 700;
     overflow: hidden;
+
 }
 
 .animation-container .text.first-text{
     color: black;
 
+}
+
+.text.secend-text{
+    font-family: 'Lobster', cursive;
+    width: 200px;
 }
 
 .text.secend-text:before{
@@ -142,6 +153,7 @@ header{
     background-color: white;
     border-left: 2px solid orangered;
     animation: typing 4s steps(12) infinite;
+
 }
 
 @keyframes typing{
@@ -154,6 +166,14 @@ header{
 }
 /* animation end  */
 
+
+.hero-text-container p{
+    padding: 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    font-weight: 600;
+    
+}
 
 .hire-button{
     margin: 40px 0;
@@ -174,6 +194,8 @@ header{
 .hero-image-container img{
     width: 90%;
     padding: 50px;
+    left: 0;
+    top: 0;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (max-width: 600px) {
