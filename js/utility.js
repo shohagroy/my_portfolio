@@ -35,3 +35,19 @@ const textLoad = () => {
 }
 textLoad();
 setInterval(textLoad, 16000)
+
+
+// progresbar Animation
+
+const progresbarContainer = document.querySelector('.progresbar');
+progresbarContainer.addEventListener('click', function(){
+    const progresbars = document.querySelectorAll(".animation");
+    for(const progresbar of progresbars){
+    console.log(progresbar)
+    progresbar.style.animationDuration = '1s'
+    }
+
+    console.log('hello')
+
+})
+

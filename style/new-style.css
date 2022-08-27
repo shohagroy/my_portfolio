@@ -286,13 +286,11 @@ header{
     height: 90vh;
     width: 100%;
     display: flex;
-
 }
 
 .service_left_side{
     height: 80vh;
     width: 50%;
-    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,6 +317,7 @@ header{
 .progresbar{
     margin-top: 20px;
     margin-left: 50px;
+    cursor: pointer;
     
 }
 
@@ -356,23 +355,93 @@ header{
 }
 
 .progresbar .html .a{
-    width: 85%;
+    /* animation: a 1s linear forwards; */
+    animation-name: a;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
 }
 
 .progresbar .html .b{
-    width: 90%;
+    /* animation: b 1s linear forwards; */
+    animation-name: b;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+
 }
 
 .progresbar .html .c{
-    width: 80%;
+    /* animation: c 1s linear forwards; */
+    animation-name: c;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+
 }
 
 .progresbar .html .d{
-    width: 85%;
+    /* animation: d 1s linear forwards; */
+    animation-name: d;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+
 }
 
 .progresbar .html .e{
-    width: 70%;
+    /* animation: e 1s linear forwards; */
+    animation-name: e;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+
+}
+.progresbar .html .f{
+    /* animation: f 1s linear forwards; */
+    animation-name: f;
+    /* animation-duration: 1s ; */
+    animation-timing-function: linear ;
+    animation-fill-mode: forwards;
+
+}
+
+.progresbar:hover .animation{
+    animation-duration: 1s ;
+}
+
+.animation{
+    background-color: red;
+}
+@keyframes a{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes b{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes c{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes d{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes e{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes f{
+    100%{
+        width: 80%;
+    }
 }
 
 .btn{
